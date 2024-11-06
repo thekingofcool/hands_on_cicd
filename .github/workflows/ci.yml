@@ -27,7 +27,7 @@ jobs:
           spark-submit scripts/process_data.py
 
       - name: Upload output file
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3  # 更新为 v3
         with:
           name: output-data
           path: output_data.csv
